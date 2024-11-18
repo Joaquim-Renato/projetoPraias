@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
 /* Reset básico */
 * {
     margin: 0;
@@ -6,12 +8,13 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family:  'Poppins', sans-serif;
     background-color: #F8F2E5; /* Cor do background */
 }
 
 .navbar {
     display: flex;
+    font-family:  'Poppins', sans-serif;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
@@ -30,16 +33,19 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
+    gap: 20px; /* Ajuste para o espaçamento desejado */
 }
 
 .nav-links li {
-    margin: 0 10px;
+    margin: 0 15px; /* Adiciona espaçamento horizontal */
 }
+
 
 .nav-links a {
     text-decoration: none;
-    color: black;
-    font-size: 16px;
+    color: #1C1570;
+    font-size: 20px; /* Aumente o valor para ajustar o tamanho  da fonte */
+    font-weight: bold; /* Torna o texto mais visível  */
     transition: color 0.3s ease;
 }
 
