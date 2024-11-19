@@ -18,3 +18,4 @@ git checkout -b nome-do-novo-branch
 
 git commit -m "first commit"
 
+### Lembrando que cada um deve subir o sua tarefa em sua respectiva branch 
