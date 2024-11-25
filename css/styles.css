@@ -1,5 +1,111 @@
+<<<<<<< HEAD
 body{
 
     background-color: #FAF6EB;
 }
 
+=======
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:  'Poppins', sans-serif;
+    background-color: #F8F2E5; /* Cor do background */
+}
+
+.navbar {
+    display: flex;
+    font-family:  'Poppins', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FFD166; /* Cor da navbar */
+    color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Ajuste para o espaçamento desejado */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Adiciona espaçamento horizontal */
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #1C1570;
+    font-size: 20px; /* Aumente o valor para ajustar o tamanho  da fonte */
+    font-weight: bold; /* Torna o texto mais visível  */
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #E07A5F; /* Cor para hover */
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background-color: black;
+    height: 3px;
+    width: 25px;
+    margin: 3px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #FFD166;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+
+
+
+footer {
+    background-color: #FFD166; /* Cor da navbar */;
+    color: #1C1570; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 10px; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position: absolute; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+  }
+>>>>>>> 39f8d13b7d74da328d1ba642c0b67f28e2a9badf
