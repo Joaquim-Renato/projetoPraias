@@ -1,3 +1,11 @@
+ HEAD
+
+body{
+
+    background-color: #FAF6EB;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 /* Reset básico */
@@ -101,3 +109,4 @@ footer {
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
   }
+
