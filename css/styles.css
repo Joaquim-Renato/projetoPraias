@@ -77,8 +77,9 @@ body{
 /* Hamburger Menu */
 .hamburger {
     display: none;
-    flex-direction: column;
     cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .hamburger .bar {
