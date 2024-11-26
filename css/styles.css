@@ -1,12 +1,22 @@
- HEAD
-
-body{
-
-    background-color: #FAF6EB;
-}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+HEAD
+
+body{
+    display: flex;
+    font-family:  'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 5px;
+    background-color: #FAF6EB;
+    background-attachment: fixed; /* Faz com que o fundo fique fixo enquanto rola a página */
+
+}
+
 
 /* Reset básico */
 * {
@@ -15,21 +25,21 @@ body{
     box-sizing: border-box;
 }
 
-body {
-    font-family:  'Poppins', sans-serif;
-    background-color: #F8F2E5; /* Cor do background */
-}
 
 .navbar {
-    display: flex;
+   
     font-family:  'Poppins', sans-serif;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    position: relative; /* Para garantir que o menu possa ser posicionado corretamente */
+    padding: 10px ;
     background-color: #FFD166; /* Cor da navbar */
     color: black;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
 .logo a {
     text-decoration: none;
@@ -68,27 +78,31 @@ body {
     cursor: pointer;
 }
 
-.hamburger span {
+.hamburger .bar {
     background-color: black;
-    height: 3px;
-    width: 25px;
+    height: 30px;
+    width: 4px;
     margin: 3px;
+    border-radius: 5px;
+    gap: 5px;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
+        position: absolute;
         flex-direction: column;
-        width: 100%;
+        width: 200%;
         background-color: #FFD166;
         position: absolute;
-        top: 60px;
+        top: 50px;
+        right: 10px;
         left: 0;
     }
 
     .nav-links.active {
-        display: flex;
+        display: flex;  /* Exibe o menu quando ativado */
     }
 
     .hamburger {
@@ -96,6 +110,51 @@ body {
     }
 }
 
+
+.carousel-card {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto; /* Permite rolagem horizontal */
+    white-space: nowrap; /* Impede quebra de linha */
+    scroll-behavior: smooth; /* Rola de forma suave */
+    padding: 20px;
+}
+.card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px; /* Largura fixa para manter alinhamento */
+    height: 400px; /* Altura fixa para consistência */
+    transition: transform 0.3s ease-in-out;
+    flex-shrink: 0; /* Evita que os cards diminuam de tamanho */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efeito de zoom */
+}
+.card-header {
+    background-color: #8e90e3;
+    color: #fff;
+    padding: 10px;
+    text-align: left; /* Alinhamento do texto */
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ffd700;
+    border-radius: 50%;
+}
+.card-image {
+    width: 100%;
+    height: 250px;
+    background-size: cover; /* Faz a imagem cobrir a área */
+   
+}
 
 
 
@@ -105,7 +164,7 @@ footer {
     text-align: center; /* Alinha o texto ao centro */
     padding: 10px; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
-    position: absolute; /* Posiciona o rodapé */
+    position: fixed; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
   }

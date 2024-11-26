@@ -19,3 +19,14 @@ git checkout -b nome-do-novo-branch
 git commit -m "first commit"
 
 ### Lembrando que cada um deve subir o sua tarefa em sua respectiva branch 
+---
+
+### Sites que podem ajudar na contrução de uma pag web 
+
+https://www.origamid.com/ 
+
+https://www.origamid.com/codex/animacao-de-svg-baseada-em-strokes/
+
+Para icons: 
+https://www.flaticon.com/br/
+
