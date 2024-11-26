@@ -49,13 +49,16 @@ body{
 }
 
 .nav-links {
-    display: flex;
     list-style: none;
-    gap: 20px; /* Ajuste para o espaçamento desejado */
+    display: flex;
+    gap: 25px;
+    position: absolute; /* Para posicionar os links no canto superior direito */
+    right: 20px; /* Alinha os links à direita */
+    
 }
 
 .nav-links li {
-    margin: 0 15px; /* Adiciona espaçamento horizontal */
+    display: inline;
 }
 
 
