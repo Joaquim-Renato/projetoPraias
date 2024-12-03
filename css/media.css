@@ -15,12 +15,12 @@
     }
 
     .card {
-        width: 100%; /* Ocupa toda a largura */
+        width: 50%; /* Ocupa toda a largura */
         height: auto; /* Ajusta a altura */
     }
 
     .carousel-card {
-        gap: 10px;
+        gap: 15px;
     }
 
     footer {
