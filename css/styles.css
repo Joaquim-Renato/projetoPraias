@@ -23,12 +23,6 @@ body{
 }
 
 
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 
 .navbar {
@@ -96,28 +90,7 @@ body{
     gap: 5px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        position: absolute;
-        flex-direction: column;
-        width: 200%;
-        background-color: #FFD166;
-        position: absolute;
-        top: 50px;
-        right: 10px;
-        left: 0;
-    }
 
-    .nav-links.active {
-        display: flex;  /* Exibe o menu quando ativado */
-    }
-
-    .hamburger {
-        display: flex;
-    }
-}
 
 
 .carousel-card {
@@ -164,17 +137,6 @@ body{
     background-size: cover; /* Faz a imagem cobrir a área */
    
 }
-@media (max-width: 768px) {
-    .card {
-        width: 100%; /* Cards ocupam toda a largura disponível */
-        height: auto; /* Permite que a altura seja ajustada */
-    }
-
-    .carousel-card {
-        gap: 10px; /* Reduz o espaçamento entre os cards */
-    }
-}
-
 
 
 footer {
