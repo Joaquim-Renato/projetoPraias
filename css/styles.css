@@ -2,6 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 HEAD
 
 body{
@@ -84,8 +89,8 @@ body{
 
 .hamburger .bar {
     background-color: black;
-    height: 30px;
-    width: 4px;
+    height: 4px; /* Reduz a altura das barras */
+    width: 25px; /* Reduz a largura das barras */
     margin: 3px;
     border-radius: 5px;
     gap: 5px;
@@ -158,6 +163,16 @@ body{
     height: 250px;
     background-size: cover; /* Faz a imagem cobrir a área */
    
+}
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* Cards ocupam toda a largura disponível */
+        height: auto; /* Permite que a altura seja ajustada */
+    }
+
+    .carousel-card {
+        gap: 10px; /* Reduz o espaçamento entre os cards */
+    }
 }
 
 
