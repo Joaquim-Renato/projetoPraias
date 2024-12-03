@@ -1,35 +1,52 @@
-h2{
-  text-align: center;
-  font-family: poppins, sans-serif;
-  color: var(cor primaria, #1C1570 );
 
+body{
+  background-attachment: fixed;
+  margin: 0;
+  padding: 5px;
+  font-family: 'poppins', sans-serif;
+  color: #1C1570;
+
+}
+
+h1,h4{
+
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  
 }
 
 
 form 
 {
 
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto; 
-    padding: 20px;
+    padding: 30px;
     border: 1px solid #ccc;
-    border-radius: 40px;
+    border-radius: 20px;
     background-color: #C7BA9E;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     
   }
   
   form label {
     font-weight: bold;
+    font-size: 1.1em;
   }
   
   form input,
   form select {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 5px;
+    font-size: 1.2em;
   }
   
   form input[type="submit"] {
@@ -42,3 +59,27 @@ form
   form input[type="submit"]:hover {
     background-color: nenhuma cor;
   }
+
+  footer {
+    background-color: #FFD166; /* Cor da navbar */;
+    color: #1C1570; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 10px; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position: fixed; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+    font-weight: bold;
+  }
+
+  .logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+
+
