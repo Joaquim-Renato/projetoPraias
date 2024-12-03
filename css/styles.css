@@ -2,6 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 HEAD
 
 body{
@@ -18,12 +23,6 @@ body{
 }
 
 
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 
 .navbar {
@@ -84,35 +83,14 @@ body{
 
 .hamburger .bar {
     background-color: black;
-    height: 30px;
-    width: 4px;
+    height: 4px; /* Reduz a altura das barras */
+    width: 25px; /* Reduz a largura das barras */
     margin: 3px;
     border-radius: 5px;
     gap: 5px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        position: absolute;
-        flex-direction: column;
-        width: 200%;
-        background-color: #FFD166;
-        position: absolute;
-        top: 50px;
-        right: 10px;
-        left: 0;
-    }
 
-    .nav-links.active {
-        display: flex;  /* Exibe o menu quando ativado */
-    }
-
-    .hamburger {
-        display: flex;
-    }
-}
 
 
 .carousel-card {
@@ -159,7 +137,6 @@ body{
     background-size: cover; /* Faz a imagem cobrir a área */
    
 }
-
 
 
 footer {

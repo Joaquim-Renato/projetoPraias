@@ -1,0 +1,102 @@
+/* Smartphones: 0-480px */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 16px; /* Ajusta o tamanho da fonte */
+    }
+
+    .hamburger {
+        display: flex; /* Exibe o menu hamburger */
+    }
+
+    .card {
+        width: 100%; /* Ocupa toda a largura */
+        height: auto; /* Ajusta a altura */
+    }
+
+    .carousel-card {
+        gap: 10px;
+    }
+
+    footer {
+        font-size: 0.8rem; /* Texto menor no rodapé */
+    }
+}
+
+/* Tablets e smartphones maiores: 481-768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .card {
+        width: 48%; /* Duas colunas de cards */
+    }
+
+    .carousel-card {
+        gap: 15px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Laptops e desktops pequenos: 769-1279px */
+@media (min-width: 769px) and (max-width: 1279px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .nav-links {
+        gap: 25px;
+        font-size: 18px;
+    }
+
+    .card {
+        width: 30%; /* Três colunas de cards */
+    }
+
+    .carousel-card {
+        gap: 20px;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}
+
+/* Monitores grandes e desktops: 1280px+ */
+@media (min-width: 1280px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .nav-links {
+        gap: 30px;
+        font-size: 20px;
+    }
+
+    .card {
+        width: 25%; /* Quatro colunas de cards */
+    }
+
+    .carousel-card {
+        gap: 25px;
+    }
+
+    footer {
+        font-size: 1.2rem;
+    }
+}
