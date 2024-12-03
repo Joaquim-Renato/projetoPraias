@@ -2,6 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 HEAD
 
 body{
@@ -17,23 +22,15 @@ body{
 
 }
 
-
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 .navbar {
    
     font-family:  'Poppins', sans-serif;
     position: relative; /* Para garantir que o menu possa ser posicionado corretamente */
-    padding: 10px ;
     background-color: #FFD166; /* Cor da navbar */
     color: black;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte para menor */
+    line-height: 1.2; /* Reduz a altura das linhas */
 }
 .navbar-container {
     display: flex;
@@ -44,14 +41,14 @@ body{
 .logo a {
     text-decoration: none;
     color: black;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 20px;
     position: absolute; /* Para posicionar os links no canto superior direito */
     right: 20px; /* Alinha os links à direita */
     
@@ -83,35 +80,12 @@ body{
 }
 
 .hamburger .bar {
-    background-color: black;
-    height: 30px;
-    width: 4px;
+    background-color: #1C1570;
+    height: 4px; /* Reduz a altura das barras */
+    width: 25px; /* Reduz a largura das barras */
     margin: 3px;
     border-radius: 5px;
     gap: 5px;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        position: absolute;
-        flex-direction: column;
-        width: 200%;
-        background-color: #FFD166;
-        position: absolute;
-        top: 50px;
-        right: 10px;
-        left: 0;
-    }
-
-    .nav-links.active {
-        display: flex;  /* Exibe o menu quando ativado */
-    }
-
-    .hamburger {
-        display: flex;
-    }
 }
 
 
@@ -123,16 +97,16 @@ body{
     overflow-x: auto; /* Permite rolagem horizontal */
     white-space: nowrap; /* Impede quebra de linha */
     scroll-behavior: smooth; /* Rola de forma suave */
-    padding: 20px;
+    padding: 10px;
 }
 .card {
     display: flex;
-    background-color: #fff;
+    background-color: #C1C8E4;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    width: 300px; /* Largura fixa para manter alinhamento */
-    height: 400px; /* Altura fixa para consistência */
+    width: 200px; /* Largura fixa para manter alinhamento */
+    height: 300px; /* Altura fixa para consistência */
     transition: transform 0.3s ease-in-out;
     flex-shrink: 0; /* Evita que os cards diminuam de tamanho */
 }
@@ -148,11 +122,23 @@ body{
 }
 
 .dot {
-    width: 10px;
-    height: 10px;
-    background-color: #ffd700;
-    border-radius: 50%;
+    width: 12px; /* Tamanho do ponto */
+    height: 12px;
+    background-color: #ffd700; /* Cor dourada */
+    border-radius: 50%; /* Torna o ponto circular */
+    border: 2px solid #E07A5F; /* Borda externa para dar destaque */
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.8); /* Efeito de brilho */
+    display: inline-block; /* Permite alinhamento correto */
+    margin-right: 5px; /* Espaço entre o ponto e o texto */
 }
+
+/* Animação no hover */
+.dot:hover {
+    transform: scale(1.2); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+    box-shadow: 0 0 12px rgba(255, 215, 0, 1); /* Intensifica o brilho */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza a animação */
+}
+
 .card-image {
     width: 100%;
     height: 250px;
@@ -161,15 +147,15 @@ body{
 }
 
 
-
 footer {
-    background-color: #FFD166; /* Cor da navbar */;
+    background-color: #FFD166; /* Cor do rodapé */;
     color: #1C1570; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
-    padding: 10px; /* Espaçamento interno */
+    padding: 5px; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
     position: fixed; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
-    font-size: 1rem; /* Tamanho da fonte */
+    font-size: 0.8rem; /* Tamanho da fonte */
+    line-height: 1.2; /* Controla a altura das linhas */
   }
 
