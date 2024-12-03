@@ -30,4 +30,8 @@ https://www.origamid.com/codex/animacao-de-svg-baseada-em-strokes/
 Para icons: 
 https://www.flaticon.com/br/
 
+
+Para o CSS :
+https://www.freecodecamp.org/portuguese/news/como-criar-uma-barra-de-navegacao-responsiva-com-um-menu-de-sanduiche-usando-flexbox/
+
 --------------------------------------------------
