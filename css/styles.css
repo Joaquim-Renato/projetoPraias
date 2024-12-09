@@ -17,20 +17,26 @@ body{
     min-height: 100vh;
     margin: 0;
     padding: 5px;
-    background-color: #FDE7B2;
+    background-color: #f9f9f9;
     background-attachment: fixed; /* Faz com que o fundo fique fixo enquanto rola a página */
 
 }
 
 .navbar {
-   
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-family:  'Poppins', sans-serif;
-    position: relative; /* Para garantir que o menu possa ser posicionado corretamente */
+    position: absolute; /* Para garantir que o menu possa ser posicionado corretamente */
     background-color: #FFD166; /* Cor da navbar */
     color: black;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 0.9rem; /* Ajusta o tamanho da fonte para menor */
     line-height: 1.2; /* Reduz a altura das linhas */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 .navbar-container {
     display: flex;
@@ -75,9 +81,6 @@ body{
 /* Hamburger Menu */
 .hamburger {
     display: none;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 5px;
 }
 
 .hamburger .bar {
@@ -86,9 +89,28 @@ body{
     width: 25px; /* Reduz a largura das barras */
     margin: 3px;
     border-radius: 5px;
-    gap: 5px;
+    gap: 5px 0;
 }
-
+/* Ajustes do carousel */
+.carousel {
+    margin-top: 70px; /* Espaço para navbar fixa */
+    max-width: 100%; /* Garante que o carousel ocupe a largura total */
+  }
+  
+  .carousel-item img {
+    max-height: 400px; /* Altura máxima para manter proporção */
+    object-fit: cover; /* Garante que a imagem se ajuste ao container */
+  }
+  
+  /* Indicadores */
+  .carousel-indicators li {
+    background-color: #1C1570; /* Cor dos indicadores */
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1); /* Garante que os ícones fiquem visíveis */
+  }
 
 .carousel-card {
     display: flex;

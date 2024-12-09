@@ -1,19 +1,30 @@
 /* Smartphones: 0-480px */
 @media (max-width: 480px) {
     .navbar {
-        padding: 5px;
+        padding: 1px;
     }
 
     .nav-links {
+        display: none;
         flex-direction: column;
         gap: 10px;
         font-size: 16px; /* Ajusta o tamanho da fonte */
+        position: relative;
+        top: 60px;
+        right: 20px;
+        background-color: #FFD166;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
     }
 
     .hamburger {
         display: flex; /* Exibe o menu hamburger */
     }
-
+    .carousel-item img {
+        max-height: 200px; /* Altura ajustada para dispositivos pequenos */
+        object-fit: cover; /* Garante que a imagem se ajuste bem */
+      }
     .card {
         width: 50%; /* Ocupa toda a largura */
         height: auto; /* Ajusta a altura */
@@ -21,6 +32,12 @@
 
     .carousel-card {
         gap: 15px;
+    }
+
+
+    .card-image {
+        max-height: 200px; /* Altura reduzida para dispositivos menores */
+        object-fit: cover;
     }
 
     footer {
@@ -35,9 +52,15 @@
     }
 
     .nav-links {
-        flex-direction: row;
+        flex-direction: column;
         gap: 20px;
     }
+
+    .carousel-item img {
+        max-height: 300px; /* Altura reduzida para tablets */
+        object-fit: cover; /* Ajusta a proporção */
+      }
+    
 
     .card {
         width: 48%; /* Duas colunas de cards */
@@ -46,12 +69,15 @@
     .carousel-card {
         gap: 15px;
     }
+    .card-image {
+        max-height: 300px; /* Altura reduzida para tablets */
+        object-fit: cover;
+    }
 
     footer {
         font-size: 0.9rem;
     }
 }
-
 
 /* Laptops e desktops pequenos: 769-1279px */
 @media (min-width: 769px) and (max-width: 1279px) {
@@ -64,6 +90,11 @@
         font-size: 18px;
     }
 
+    .carousel-item img {
+        max-height: 400px; /* Altura ajustada para laptops */
+        object-fit: cover; /* Garante proporção */
+      }
+      
     .card {
         width: 30%; /* Três colunas de cards */
     }
@@ -71,21 +102,43 @@
     .carousel-card {
         gap: 20px;
     }
+    .card-image {
+        max-height: 400px; 
+        object-fit: cover;
+    }
 
     footer {
         font-size: 1rem;
+        text-align: center;
     }
 }
 
 /* Monitores grandes e desktops: 1280px+ */
 @media (min-width: 1280px) {
+    
     .navbar {
-        padding: 20px;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family:  'Poppins', sans-serif;
+        position: absolute; /* Para garantir que o menu possa ser posicionado corretamente */
+        background-color: #FFD166; /* Cor da navbar */
+        color: black;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte para menor */
+        line-height: 1.2; /* Reduz a altura das linhas */
+        width: 100%;
+       
     }
 
     .nav-links {
-        gap: 30px;
-        font-size: 20px;
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        position: absolute; /* Para posicionar os links no canto superior direito */
+        right: 20px; /* Alinha os links à direita */
+        
     }
 
     .card {
@@ -96,7 +149,13 @@
         gap: 25px;
     }
 
+    .card-image {
+        max-height: 500px; 
+        object-fit: cover;
+    }
+    
     footer {
         font-size: 1.2rem;
+        text-align: center;
     }
 }

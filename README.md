@@ -1,5 +1,8 @@
 # Antoações 
 
+- dot = bolinha de destino e origem do card; 
+
+
 git config --global user.name "nome do seu usuário "
 
 git config --global user.email “seu email”
