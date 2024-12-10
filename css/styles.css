@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
+/* Aplicar uma rolagem suave ao clicar em link a */
 html {
     scroll-behavior: smooth;
 }
@@ -22,13 +23,15 @@ body{
 
 }
 
+
+
 .navbar {
     
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family:  'Poppins', sans-serif;
-    position: absolute; /* Para garantir que o menu possa ser posicionado corretamente */
+    position: absolute; 
     background-color: #FFD166; /* Cor da navbar */
     color: black;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -55,7 +58,7 @@ body{
     list-style: none;
     display: flex;
     gap: 20px;
-    position: absolute; /* Para posicionar os links no canto superior direito */
+    position: absolute; 
     right: 20px; /* Alinha os links à direita */
     
 }
@@ -78,19 +81,37 @@ body{
     color: #E07A5F; /* Cor para hover */
 }
 
-/* Hamburger Menu */
+/* Estilo do menu hambúrguer */
 .hamburger {
     display: none;
+    position: absolute;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    top: 30px; /* Ajuste para o canto superior */
+    right: 10px; /* Ajuste para o canto direito */
+    z-index: 1500; /* Certifique-se de que está acima de outros elementos */
+    cursor: pointer;  /* Adiciona o ícone de "mãozinha" */
+    color: #1C1570;
+    
 }
 
-.hamburger .bar {
-    background-color: #1C1570;
-    height: 4px; /* Reduz a altura das barras */
-    width: 25px; /* Reduz a largura das barras */
-    margin: 3px;
-    border-radius: 5px;
-    gap: 5px 0;
+.hamburger .line {
+    width: 30px; /* Ajusta a largura das linhas */
+    height: 3px; /* Ajusta a altura das linhas */
+    background-color: #1C1570; /* Cor das linhas */
+    margin: 5px 0; /* Espaçamento entre as linhas */
+    border-radius: 3px; /* Torna as bordas das linhas arredondadas */
+    transition: all 0.3s ease; /* Adiciona suavidade ao abrir/fechar */
 }
+
+/* Ocultar menu em dispositivos móveis por padrão */
+.nav-links {
+    display: flex;
+    flex-direction: row;
+}
+
+
 /* Ajustes do carousel */
 .carousel {
     margin-top: 70px; /* Espaço para navbar fixa */
@@ -143,7 +164,7 @@ body{
     padding: 10px;
     text-align: left; /* Alinhamento do texto */
 }
-
+/*Bolinhas do card */
 .dot {
     width: 12px; /* Tamanho do ponto */
     height: 12px;

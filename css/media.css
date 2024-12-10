@@ -9,7 +9,7 @@
         flex-direction: column;
         gap: 10px;
         font-size: 16px; /* Ajusta o tamanho da fonte */
-        position: relative;
+        position: absolute;
         top: 60px;
         right: 20px;
         background-color: #FFD166;
@@ -19,7 +19,7 @@
     }
 
     .hamburger {
-        display: flex; /* Exibe o menu hamburger */
+        display: block; /* Exibe o menu hamburger */
     }
     .carousel-item img {
         max-height: 200px; /* Altura ajustada para dispositivos pequenos */
@@ -55,6 +55,9 @@
         flex-direction: column;
         gap: 20px;
     }
+    .hamburger {
+        display: block; /* Exibe o menu hamburger */
+    }
 
     .carousel-item img {
         max-height: 300px; /* Altura reduzida para tablets */
@@ -88,6 +91,10 @@
     .nav-links {
         gap: 25px;
         font-size: 18px;
+    }
+
+    .hamburger {
+        display: block; /* Exibe o menu hamburger */
     }
 
     .carousel-item img {
@@ -140,6 +147,7 @@
         right: 20px; /* Alinha os links à direita */
         
     }
+    
 
     .card {
         width: 25%; /* Quatro colunas de cards */
