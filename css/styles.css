@@ -52,12 +52,15 @@ body{
 }
 
 .nav-links {
+    
+
     list-style: none;
     display: flex;
     gap: 20px;
     position: absolute; /* Para posicionar os links no canto superior direito */
     right: 20px; /* Alinha os links à direita */
     position: fixed;
+    
     
 }
 
@@ -84,10 +87,11 @@ body{
 
 /* Hamburger Menu */
 .hamburger {
-    display: none;
+    display: flex;
     cursor: pointer;
     flex-direction: column;
     gap: 5px;
+    cursor: pointer;
 }
 
 .hamburger .bar {
@@ -164,7 +168,7 @@ footer {
     text-align: center; /* Alinha o texto ao centro */
     padding: 5px; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
-    position: fixed; /* Posiciona o rodapé */
+    position: relative; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 0.8rem; /* Tamanho da fonte */
     line-height: 1.2; /* Controla a altura das linhas */
