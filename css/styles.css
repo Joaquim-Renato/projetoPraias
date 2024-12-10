@@ -7,7 +7,12 @@ html {
     scroll-behavior: smooth;
 }
 
-
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 HEAD
 
 body{
@@ -22,8 +27,10 @@ body{
     background-attachment: fixed; /* Faz com que o fundo fique fixo enquanto rola a página */
 
 }
-
-
+main {
+    background-color: #f9f9f9 no-repeat center center;
+    background-size: cover; 
+}
 
 .navbar {
     
@@ -40,6 +47,7 @@ body{
     width: 100%;
     top: 0;
     z-index: 1000;
+    
 }
 .navbar-container {
     display: flex;
@@ -82,7 +90,7 @@ body{
 }
 
 /* Estilo do menu hambúrguer */
-.hamburger {
+.hamburger div {
     display: none;
     position: absolute;
     font-size: 1.5rem;
@@ -132,6 +140,11 @@ body{
   .carousel-control-next-icon {
     filter: invert(1); /* Garante que os ícones fiquem visíveis */
   }
+
+  .ofertas {
+    text-align: center;
+    padding: 30px;
+}
 
 .carousel-card {
     display: flex;
@@ -188,6 +201,33 @@ body{
     height: 250px;
     background-size: cover; /* Faz a imagem cobrir a área */
    
+}
+
+.newsletter {
+    background: #FFF;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    border: 1px solid #ddd;
+    width: 70%;
+    margin: 40px auto;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    background: #0DA2D4;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 

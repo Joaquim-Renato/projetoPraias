@@ -37,4 +37,8 @@ https://www.flaticon.com/br/
 Para o CSS :
 https://www.freecodecamp.org/portuguese/news/como-criar-uma-barra-de-navegacao-responsiva-com-um-menu-de-sanduiche-usando-flexbox/
 
+Para navbar: 
+https://www.bing.com/videos/riverview/relatedvideo?q=como+fazer+uma+navbar+que+retrai+em+dispositivos+m%c3%b3veis&mid=2540FB2B0AA7DFDB9FD32540FB2B0AA7DFDB9FD3&FORM=VIRE
+ 
+
 --------------------------------------------------
