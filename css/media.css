@@ -32,12 +32,15 @@
 
     .carousel-card {
         gap: 15px;
+<<<<<<< HEAD
     }
 
 
     .card-image {
         max-height: 200px; /* Altura reduzida para dispositivos menores */
         object-fit: cover;
+=======
+>>>>>>> 067083da3d478811f831f6ffda36894e25044c6e
     }
 
     footer {
@@ -165,5 +168,187 @@
     footer {
         font-size: 1.2rem;
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+    body {
+        padding: 10px; /* Aumenta o padding para evitar que o conteúdo fique colado nas bordas */
+    }
+
+    form {
+        max-width: 100%; /* O formulário ocupará 100% da largura */
+        padding: 15px; /* Diminui o padding do formulário */
+    }
+
+    h1, h4 {
+        font-size: 1.2em; /* Aumenta um pouco o tamanho da fonte */
+        text-align: center;
+    }
+
+    /* Ajustando os campos do formulário para ficarem mais adequados ao tamanho da tela */
+    form label {
+        font-size: 1em; /* Ajusta o tamanho da fonte */
+    }
+
+    form input,
+    form select {
+        width: 100%; /* Garante que o input e select ocupem toda a largura disponível */
+        font-size: 1.1em; /* Ajusta o tamanho da fonte */
+    }
+
+    form input[type="submit"] {
+        width: 100%; /* Botão de envio ocupa toda a largura */
+        padding: 12px;
+        font-size: 1.1em;
+    }
+
+    /* Ajustando o mapa */
+    .map-container {
+        width: 100%; /* Mapa ocupa toda a largura */
+        max-width: 100%; /* Remove o limite de largura */
+        height: 300px; /* Diminui a altura para se ajustar melhor à tela */
+    }
+    
+    footer {
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte do rodapé */
+        padding: 8px;
+    }
+}
+
+/* Outras media queries para diferentes tamanhos de tela */
+@media only screen and (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 414px) and (max-height: 896px) {
+    body {
+        padding: 15px; /* Aumenta o padding para dar um pouco mais de espaço */
+    }
+
+    form {
+        max-width: 100%; /* O formulário ocupará 100% da largura */
+        padding: 20px; /* Aumenta o padding do formulário */
+    }
+
+    h1, h4 {
+        font-size: 1.3em; /* Aumenta o tamanho da fonte para maior visibilidade */
+        text-align: center;
+    }
+
+    /* Ajustando os campos do formulário */
+    form label {
+        font-size: 1.1em; /* Aumenta o tamanho da fonte dos rótulos */
+    }
+
+    form input,
+    form select {
+        width: 100%; /* Garante que os inputs e selects ocupem toda a largura disponível */
+        font-size: 1.2em; /* Ajusta o tamanho da fonte */
+    }
+
+    form input[type="submit"] {
+        width: 100%; /* O botão de envio ocupa toda a largura */
+        padding: 12px;
+        font-size: 1.2em;
+    }
+
+    /* Ajustando o mapa */
+    .map-container {
+        width: 100%; /* O mapa ocupa toda a largura */
+        max-width: 100%; /* Removendo a largura máxima */
+        height: 350px; /* Ajustando a altura do mapa */
+    }
+
+    footer {
+        font-size: 1rem; /* Ajustando o tamanho da fonte do rodapé */
+        padding: 10px;
+    }
+}
+
+/* Outras media queries para dispositivos menores */
+@media only screen and (max-width: 768px) {
+    form {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1280px) and (max-height: 800px) {
+    body {
+        padding: 20px; /* Aumenta o padding para um melhor espaçamento */
+    }
+
+    form {
+        max-width: 900px; /* O formulário ocupa até 900px de largura */
+        margin: 0 auto; /* Centraliza o formulário */
+        padding: 30px; /* Adiciona padding ao redor do formulário */
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        background-color: #C7BA9E;
+    }
+
+    h1, h4 {
+        font-size: 1.4em; /* Aumenta o tamanho da fonte para visibilidade em telas maiores */
+        text-align: center;
+    }
+
+    form label {
+        font-size: 1.2em; /* Aumenta o tamanho da fonte para os rótulos */
+    }
+
+    form input,
+    form select {
+        width: 100%; /* Garante que os inputs e selects ocupem toda a largura disponível */
+        font-size: 1.3em; /* Ajusta o tamanho da fonte para melhor legibilidade */
+    }
+
+    form input[type="submit"] {
+        width: 100%; /* O botão de envio ocupa toda a largura */
+        padding: 15px;
+        font-size: 1.3em;
+    }
+
+    .map-container {
+        width: 100%; /* O mapa ocupa toda a largura */
+        height: 450px; /* Ajusta a altura do mapa para que ele fique proporcional */
+    }
+
+    footer {
+        font-size: 1.2em; /* Ajusta o tamanho da fonte do rodapé */
+        padding: 15px;
+        text-align: center;
+    }
+}
+
+/* Outras media queries para dispositivos menores */
+@media only screen and (max-width: 768px) {
+    form {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    footer {
+        font-size: 1rem;
     }
 }

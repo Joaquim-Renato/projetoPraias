@@ -20,9 +20,10 @@ body{
     padding: 5px;
     background-color: #f9f9f9;
     background-attachment: fixed; /* Faz com que o fundo fique fixo enquanto rola a página */
-
+    padding-top: 50px; /* Ajuste este valor à altura real da navbar */
 }
 
+<<<<<<< HEAD
 
 
 .navbar {
@@ -32,19 +33,33 @@ body{
     align-items: center;
     font-family:  'Poppins', sans-serif;
     position: absolute; 
+=======
+.navbar {
+    top: 0; /* Alinha a navbar ao topo */
+    left: 0; /* Garante alinhamento ao lado esquerdo */
+    width: 100%; /* Faz a navbar ocupar toda a largura da tela */
+    z-index: 1000; /* Garante que a navbar fique acima de outros elementos */
+    font-family:  'Poppins', sans-serif;
+    position: fixed; /* Para garantir que o menu possa ser posicionado corretamente */
+>>>>>>> 067083da3d478811f831f6ffda36894e25044c6e
     background-color: #FFD166; /* Cor da navbar */
     color: black;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 0.9rem; /* Ajusta o tamanho da fonte para menor */
     line-height: 1.2; /* Reduz a altura das linhas */
+<<<<<<< HEAD
     width: 100%;
     top: 0;
     z-index: 1000;
+=======
+    
+>>>>>>> 067083da3d478811f831f6ffda36894e25044c6e
 }
 .navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
   }
 
 .logo a {
@@ -52,20 +67,34 @@ body{
     color: black;
     font-size: 20px;
     font-weight: bold;
+    
 }
 
 .nav-links {
+    
+
     list-style: none;
     display: flex;
     gap: 20px;
+<<<<<<< HEAD
     position: absolute; 
+=======
+    position: absolute; /* Para posicionar os links no canto superior direito */
+>>>>>>> 067083da3d478811f831f6ffda36894e25044c6e
     right: 20px; /* Alinha os links à direita */
+    position: fixed;
+    
     
 }
 
 
 .nav-links li {
+<<<<<<< HEAD
     display: flex;
+=======
+    display: inline;
+    
+>>>>>>> 067083da3d478811f831f6ffda36894e25044c6e
 }
 
 
@@ -75,14 +104,18 @@ body{
     font-size: 20px; /* Aumente o valor para ajustar o tamanho  da fonte */
     font-weight: bold; /* Torna o texto mais visível  */
     transition: color 0.3s ease;
+    
+    
 }
 
 .nav-links a:hover {
     color: #E07A5F; /* Cor para hover */
+    
 }
 
 /* Estilo do menu hambúrguer */
 .hamburger {
+<<<<<<< HEAD
     display: none;
     position: absolute;
     font-size: 1.5rem;
@@ -133,6 +166,25 @@ body{
     filter: invert(1); /* Garante que os ícones fiquem visíveis */
   }
 
+=======
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    background-color: #1C1570;
+    height: 4px; /* Reduz a altura das barras */
+    width: 25px; /* Reduz a largura das barras */
+    margin: 3px;
+    border-radius: 5px;
+    gap: 5px;
+}
+
+
+>>>>>>> 067083da3d478811f831f6ffda36894e25044c6e
 .carousel-card {
     display: flex;
     justify-content: center;
@@ -197,7 +249,7 @@ footer {
     text-align: center; /* Alinha o texto ao centro */
     padding: 5px; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
-    position: fixed; /* Posiciona o rodapé */
+    position: relative; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 0.8rem; /* Tamanho da fonte */
     line-height: 1.2; /* Controla a altura das linhas */
