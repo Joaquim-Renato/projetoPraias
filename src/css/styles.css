@@ -83,6 +83,10 @@ body{
 .nav-links a:hover {
     color: #E07A5F; /* Cor para hover */
 }
+/* Mostra as nav-links quando o hambúrguer é clicado */
+.nav-links.show {
+    display: block; /* Torna o menu visível */
+}
 
 /* Estilo do menu hambúrguer */
 .hamburger {
