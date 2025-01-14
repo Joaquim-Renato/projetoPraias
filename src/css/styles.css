@@ -20,7 +20,9 @@ body{
     padding: 5px;
     background-color: #f9f9f9;
     background-attachment: fixed; /* Faz com que o fundo fique fixo enquanto rola a página */
-
+    overflow: auto; /* Permite o scroll */
+    height: auto;
+    min-height: 100%;
 }
 
 
