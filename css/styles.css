@@ -33,6 +33,7 @@ body{
     align-items: center;
     font-family:  'Poppins', sans-serif;
     position: absolute; 
+}
 
 .navbar {
     top: 0; /* Alinha a navbar ao topo */
@@ -75,7 +76,7 @@ body{
     display: flex;
     gap: 20px;
 
-    position: absolute; 
+    
 
     position: absolute; /* Para posicionar os links no canto superior direito */
 
@@ -163,7 +164,7 @@ body{
     filter: invert(1); /* Garante que os ícones fiquem visíveis */
   }
 
-
+.carousel-card{
     display: flex;
     cursor: pointer;
     flex-direction: column;
@@ -250,5 +251,7 @@ footer {
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 0.8rem; /* Tamanho da fonte */
     line-height: 1.2; /* Controla a altura das linhas */
-  }
+}
+  
+    
 
