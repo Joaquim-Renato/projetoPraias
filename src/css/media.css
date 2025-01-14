@@ -19,7 +19,16 @@
     }
 
     .hamburger {
-        display: flex; /* Exibe o menu hamburger */
+        display: block; /* Exibe o menu hamburger */
+        position: absolute;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        top: 30px; /* Ajuste para o canto superior */
+        right: 10px; /* Ajuste para o canto direito */
+        z-index: 1500; /* Certifique-se de que está acima de outros elementos */
+        cursor: pointer;  /* Adiciona o ícone de "mãozinha" */
+        color: #1C1570;
     }
     .carousel-item img {
         max-height: 200px; /* Altura ajustada para dispositivos pequenos */
@@ -51,13 +60,25 @@
         padding: 10px;
     }
 
+    .hamburger {
+        display: block; /* Exibe o menu hamburger */
+        position: absolute;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        top: 30px; /* Ajuste para o canto superior */
+        right: 10px; /* Ajuste para o canto direito */
+        z-index: 1500; /* Certifique-se de que está acima de outros elementos */
+        cursor: pointer;  /* Adiciona o ícone de "mãozinha" */
+        color: #1C1570;
+    }
+
     .nav-links {
         flex-direction: column;
         gap: 20px;
     }
-    .hamburger {
-        display: flex; /* Exibe o menu hamburger */
-    }
+  
+    
 
     .carousel-item img {
         max-height: 300px; /* Altura reduzida para tablets */
@@ -94,7 +115,7 @@
     }
 
     .hamburger {
-        display: flex; /* Exibe o menu hamburger */
+        display: none;
     }
 
     .carousel-item img {
@@ -147,11 +168,10 @@
         right: 20px; /* Alinha os links à direita */
         
     }
-
-    .hamburger {
-        display: none; /* Esconde o botão em telas grandes */
-    }
     
+    .hamburger {
+        display: none;
+    }
 
     .card {
         width: 25%; /* Quatro colunas de cards */
