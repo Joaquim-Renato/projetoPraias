@@ -32,15 +32,14 @@
 
     .carousel-card {
         gap: 15px;
-<<<<<<< HEAD
+
     }
 
 
     .card-image {
         max-height: 200px; /* Altura reduzida para dispositivos menores */
         object-fit: cover;
-=======
->>>>>>> 067083da3d478811f831f6ffda36894e25044c6e
+
     }
 
     footer {
