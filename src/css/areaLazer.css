@@ -1,14 +1,29 @@
-/* Estilo geral para o corpo */
-body {
-    font-family: Poppins,  sans-serif;/**/
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
 
 
-    height: 100vh; /* Garante que o body ocupe toda a tela */
-    
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+html {
+    scroll-behavior: smooth;
 }
+
+
+HEAD
+
+body{
+    display: flex;
+    font-family:  'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 5px;
+    background-color: #FAF6EB;
+    background-attachment: fixed; /* Faz com que o fundo fique fixo enquanto rola a página */
+    overflow: auto; /* Permite o scroll */
+    height: auto;
+    min-height: 100%;
+}
+
 
 h1{
     margin: 20px;
@@ -18,6 +33,97 @@ h1{
     text-align: center;/**/
 
 }
+.navbar {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family:  'Poppins', sans-serif;
+    position: absolute; 
+    background-color: #FFD166; /* Cor da navbar */
+    color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte para menor */
+    line-height: 1.2; /* Reduz a altura das linhas */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: absolute; 
+    right: 20px; /* Alinha os links à direita */
+    
+}
+
+
+.nav-links li {
+    display: flex;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #1C1570;
+    font-size: 20px; /* Aumente o valor para ajustar o tamanho  da fonte */
+    font-weight: bold; /* Torna o texto mais visível  */
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #E07A5F; /* Cor para hover */
+}
+/* Mostra as nav-links quando o hambúrguer é clicado */
+.nav-links.show {
+    display: block; /* Torna o menu visível */
+}
+
+/* Estilo do menu hambúrguer */
+.hamburger {
+    display: none;
+    position: absolute;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    top: 30px; /* Ajuste para o canto superior */
+    right: 10px; /* Ajuste para o canto direito */
+    z-index: 1500; /* Certifique-se de que está acima de outros elementos */
+    cursor: pointer;  /* Adiciona o ícone de "mãozinha" */
+    color: #1C1570;
+    
+}
+
+.hamburger .line {
+    width: 30px; /* Ajusta a largura das linhas */
+    height: 3px; /* Ajusta a altura das linhas */
+    background-color: #1C1570; /* Cor das linhas */
+    margin: 5px 0; /* Espaçamento entre as linhas */
+    border-radius: 3px; /* Torna as bordas das linhas arredondadas */
+    transition: all 0.3s ease; /* Adiciona suavidade ao abrir/fechar */
+}
+
+/* Ocultar menu em dispositivos móveis por padrão */
+.nav-links {
+    display: flex;
+    flex-direction: row;
+}
+
 
 .container {
     display: flex;
@@ -101,3 +207,14 @@ h1{
     align-items: center;
 
 }
+footer {
+    background-color: #FFD166; /* Cor do rodapé */;
+    color: #1C1570; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 5px; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position: fixed; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 0.8rem; /* Tamanho da fonte */
+    line-height: 1.2; /* Controla a altura das linhas */
+  }
