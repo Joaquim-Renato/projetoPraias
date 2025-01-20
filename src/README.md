@@ -106,10 +106,10 @@ A Home Page serve como o ponto de partida da experiência do usuário, convidand
 ### HTML
 
 **1. Estrutura do Documento**
-O documento segue o padrão HTML5 (<!DOCTYPE html>), garantindo compatibilidade com navegadores modernos.
+O documento segue o padrão HTML5 <!DOCTYPE html>, garantindo compatibilidade com navegadores modernos. <br>
 A head inclui metadados importantes, links para bibliotecas externas (Bootstrap, Google Fonts) e arquivos de estilos personalizados. <br>
 **2. Navegação**
-Inclui uma barra de navegação (<nav>) com:
+Inclui uma barra de navegação <nav> com:
 Logotipo: Um link com uma imagem representando a identidade visual do site.
 Links de navegação: Menu para acesso rápido às seções e páginas internas do site.
 Menu hambúrguer: Implementado para versões responsivas. <br>
