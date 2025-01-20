@@ -42,8 +42,8 @@ cell-phone.png
 logotipoPraieiraFonte.png
 
 
-src/html
-Contém os arquivos HTML:
+**src/html**
+Contém os arquivos **HTML**:
 areaLazer.html
 formContato.html
 index.html ( a página inicial do site ou como é comumente denominada “home page” ).
