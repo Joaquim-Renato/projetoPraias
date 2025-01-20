@@ -106,42 +106,43 @@ A Home Page serve como o ponto de partida da experiência do usuário, convidand
 ### HTML
 
 **1. Estrutura do Documento**
-O documento segue o padrão HTML5 <!DOCTYPE html>, garantindo compatibilidade com navegadores modernos. <br>
+O documento segue o padrão HTML5 ``DOCTYPE html``, garantindo compatibilidade com navegadores modernos. <br>
 A head inclui metadados importantes, links para bibliotecas externas (Bootstrap, Google Fonts) e arquivos de estilos personalizados. <br>
 **2. Navegação**
-Inclui uma barra de navegação <nav> com:
+Inclui uma barra de navegação ``nav`` com: <br>
 Logotipo: Um link com uma imagem representando a identidade visual do site.
 Links de navegação: Menu para acesso rápido às seções e páginas internas do site.
 Menu hambúrguer: Implementado para versões responsivas. <br>
 **3. Carrossel**
-Um carrossel (<div class="carousel slide">) exibe imagens rotativas de alta qualidade, destacando o tema das praias. Ele é gerenciado pelo Bootstrap e inclui botões para navegar entre as imagens. <br>
+Um carrossel ``div class="carousel slide"`` exibe imagens rotativas de alta qualidade, destacando o tema das praias. Ele é gerenciado pelo Bootstrap e inclui botões para navegar entre as imagens. <br>
 **4. Seção de Ofertas**
-Apresenta cartões (<div class="card">) que mostram diferentes destinos turísticos com imagens e descrições curtas. <br>
+Apresenta cartões ``div class="card"`` que mostram diferentes destinos turísticos com imagens e descrições curtas. <br>
 **5. Newsletter**
-Contém um formulário de inscrição simples (<form>), onde os usuários podem se cadastrar para receber atualizações e ofertas exclusivas. <br>
+Contém um formulário de inscrição simples ``form``, onde os usuários podem se cadastrar para receber atualizações e ofertas exclusivas. <br>
 **6. Rodapé**
 Fornece informações de copyright e um e-mail de contato para suporte ou informações adicionais.
 
 
 ## CSS
 **1. Tipografia e Estilo Global**
-A fonte principal utilizada é a Poppins (importada do Google Fonts), que traz um visual moderno e limpo. 
-A rolagem suave é implementada com a propriedade scroll-behavior: smooth, oferecendo uma transição suave entre as seções.
+A fonte principal utilizada é a Poppins (importada do Google Fonts), que traz um visual moderno e limpo. <br>
+A rolagem suave é implementada com a propriedade scroll-behavior: smooth, oferecendo uma transição suave entre as seções. <br>
 **2. Estilização do Corpo da Página**
-Centralização dos elementos com Flexbox, proporcionando um layout mais flexível e equilibrado.
+Centralização dos elementos com Flexbox, proporcionando um layout mais flexível e equilibrado.<br>
 O fundo da página é claro e fixo, criando uma sensação de leveza e harmonia.
+<br><br>
 
 **3. Navbar**
 A barra de navegação tem:
-Design Responsivo: A barra de navegação se adapta a diferentes tamanhos de tela, incluindo um menu hambúrguer para dispositivos móveis.
-Estilização Personalizada: Utilização de cores vibrantes e efeitos de hover para criar uma navegação interativa e atrativa.
+Design Responsivo: A barra de navegação se adapta a diferentes tamanhos de tela, incluindo um menu hambúrguer para dispositivos móveis. <br>
+Estilização Personalizada: Utilização de cores vibrantes e efeitos de hover para criar uma navegação interativa e atrativa. <br>
 
 **4. Carrossel**
-Totalmente responsivo, as imagens se ajustam ao tamanho da tela com classes do Bootstrap.
+Totalmente responsivo, as imagens se ajustam ao tamanho da tela com classes do Bootstrap.<br>
 **5. Cartões de Ofertas**
-Os cartões são estilizados para apresentar informações organizadas e visuais atraentes com imagens e localizações.
+Os cartões são estilizados para apresentar informações organizadas e visuais atraentes com imagens e localizações.<br>
 **6. Formulário de Newsletter**
-O formulário é simples e funcional, destacando-se com botões e campos alinhados.
+O formulário é simples e funcional, destacando-se com botões e campos alinhados.<br>
 
 
 ____________________
