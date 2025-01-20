@@ -37,28 +37,28 @@ Esses arquivos estilizam seções ou páginas específicas, como “index” (Ho
 ``media.css:`` Responsável pela responsividade do site, ajustando o layout para diferentes tamanhos de tela usando media queries.<br>
 ``styles.css:`` Contém estilos globais compartilhados entre as páginas, também responsável pelo estilo da nossa home page. <br>
 
- ``src/favicons``
+ ``src/favicons`` 
 Contém ícones para o site:
 cell-phone.png
 logotipoPraieiraFonte.png
 
 
-**src/html**
+``src/html``
 Contém os arquivos **HTML**:
-areaLazer.html
-formContato.html
-index.html ( a página inicial do site ou como é comumente denominada “home page” ).
+``areaLazer.html`` <br>
+``formContato.html`` <br>
+``index.html`` ( a página inicial do site ou como é comumente denominada “home page” ).
+<br>
 
-
-**src/img**
-Contém imagens usadas no projeto:
+``src/img``
+Contém imagens usadas no projeto: <br>
 Fotos temáticas de verão e praia.
 Arquivos PNG e JPG de logotipos e montagens.
 
 
-**src/js**
+``src/js``
 Contém o arquivo de script JavaScript:
-script.js: Adicionar interatividade ao site, como navegação e animações
+``script.js``: Adicionar interatividade ao site, como navegação e animações
 
 **Outros Arquivos**
 ``package-lock.json`` e ``package.json:`` Arquivos relacionados ao gerenciamento de dependências (provavelmente com o npm).
