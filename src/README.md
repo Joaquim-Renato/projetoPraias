@@ -44,7 +44,7 @@ logotipoPraieiraFonte.png
 
 
 ``src/html``
-Contém os arquivos **HTML**:
+Contém os arquivos ``HTML``:
 ``areaLazer.html`` <br>
 ``formContato.html`` <br>
 ``index.html`` ( a página inicial do site ou como é comumente denominada “home page” ).
