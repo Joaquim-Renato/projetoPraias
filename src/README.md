@@ -10,11 +10,11 @@ Este projeto foi construído utilizando HTML, CSS e uma pitada de JavaScript par
 O site utiliza imagens temáticas e uma interface limpa para inspirar viajantes, permitindo que eles explorem destinos de forma visual e organizada
 
 ## Descrição Geral 
-A aplicação web é projetada para:
-Fornecer dicas úteis sobre as melhores praias e destinos costeiros.
-Oferecer uma interface amigável e visualmente atraente.
-Simplificar a experiência de pesquisa de turistas e viajantes, centralizando as informações de forma organizada e acessível.
-Utilizamos HTML para estruturar o conteúdo, CSS para estilizar a página com um design atraente, e JavaScript para adicionar interatividade e melhorar a experiência do usuário.
+A aplicação web foi projetada para:
+Fornecer dicas úteis sobre as melhores praias e destinos costeiros. <br>
+Oferecer uma interface amigável e visualmente atraente. <br>
+Simplificar a experiência de pesquisa de turistas e viajantes, centralizando as informações de forma organizada e acessível. <br>
+Utilizamos HTML para estruturar o conteúdo, CSS para estilizar a página com um design atraente, e JavaScript para adicionar interatividade e melhorar a experiência do usuário. <br>
 Com este projeto, buscamos atender às necessidades de quem deseja aproveitar ao máximo sua viagem ao litoral, proporcionando uma ferramenta confiável e eficiente.
 
 ## Estrutura do projeto
@@ -29,7 +29,7 @@ Abaixo você encontrará informações mais detalhadas sobre a estrutura deste p
 
 ### Subdiretórios
 
-**src/css**
+**src/css** <br>
 Contém os arquivos de estilo *CSS*: <br>
 Esses arquivos estilizam seções ou páginas específicas, como “index” (Home Page),  "Área de Lazer" e "Contato". <br>
 ``areaLazer.css:`` Estiliza a página dedicada às áreas de lazer das praias. <br>
@@ -67,26 +67,28 @@ Contém o arquivo de script JavaScript:
 
 ## Tecnologias utilizadas: 
 
-**HTML (HyperText Markup Language)**
+**HTML (HyperText Markup Language)** <br>
 Linguagem de marcação utilizada para estruturar o conteúdo da página web. 
 Em nosso projeto, o HTML define o layout, como navegação, carrossel de imagens e seções como "Ofertas" e "Newsletter".
 <br>
 
-**CSS (Cascading Style Sheets)** 
+**CSS (Cascading Style Sheets)** <br>
 Responsável pela estilização do site, como cores, fontes, posicionamento e espaçamento. No seu código, o **CSS** é usado para criar um design atraente, com estilos como rolagem suave, navbar fixa e responsividade. <br>
 
-**JavaScript**
+**JavaScript** <br>
 Linguagem de programação que adiciona interatividade à página. No nosso projeto, foi  usada para a funcionalidade do menu hambúrguer.<br>
 
-**Bootstrap**
+**Bootstrap** <br>
 Framework CSS que facilita o desenvolvimento de layouts responsivos e modernos. O nosso projeto utiliza a versão 4.1.3 para componentes como o carrossel e a navbar.
 
-**Google Fonts**
+**Google Fonts** <br>
 Fonte personalizada "Poppins", importada para garantir uma estética uniforme e profissional ao texto.
 
-**Imagens e Ícones**
+**Imagens e Ícones** <br>
 Inclui logotipos, imagens ilustrativas e ícones, que enriquecem visualmente o nosso site.
-Responsividade
+<br>
+
+**Responsividade**
 A responsividade do site é garantida por meio de media queries no arquivo media.css e pela integração com o framework Bootstrap. Esses recursos permitem que o layout e os estilos sejam adaptados a diferentes tamanhos de tela, oferecendo uma navegação consistente e acessível em dispositivos móveis, tablets e desktops.
 
 
