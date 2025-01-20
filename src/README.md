@@ -29,7 +29,7 @@ Abaixo você encontrará informações mais detalhadas sobre a estrutura deste p
 
 ### Subdiretórios
 
-**src/css** <br>
+``src/css`` <br>
 Contém os arquivos de estilo *CSS*: <br>
 Esses arquivos estilizam seções ou páginas específicas, como “index” (Home Page),  "Área de Lazer" e "Contato". <br>
 ``areaLazer.css:`` Estiliza a página dedicada às áreas de lazer das praias. <br>
