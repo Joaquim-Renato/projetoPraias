@@ -32,11 +32,12 @@ Abaixo você encontrará informações mais detalhadas sobre a estrutura deste p
 **src/css**
 Contém os arquivos de estilo *CSS*:
 Esses arquivos estilizam seções ou páginas específicas, como “index” (Home Page),  "Área de Lazer" e "Contato".
-areaLazer.css: Estiliza a página dedicada às áreas de lazer das praias.
-contato.css: Aplica os estilos ao formulário de contato.
-media.css: Responsável pela responsividade do site, ajustando o layout para diferentes tamanhos de tela usando media queries.
-styles.css: Contém estilos globais compartilhados entre as páginas, também responsável pelo estilo da nossa home page
- src/favicons
+``areaLazer.css:`` Estiliza a página dedicada às áreas de lazer das praias.
+``contato.css:`` Aplica os estilos ao formulário de contato.
+``media.css:`` Responsável pela responsividade do site, ajustando o layout para diferentes tamanhos de tela usando media queries.
+``styles.css:`` Contém estilos globais compartilhados entre as páginas, também responsável pelo estilo da nossa home page
+
+ ``src/favicons``
 Contém ícones para o site:
 cell-phone.png
 logotipoPraieiraFonte.png
@@ -49,25 +50,101 @@ formContato.html
 index.html ( a página inicial do site ou como é comumente denominada “home page” ).
 
 
-src/img
+**src/img**
 Contém imagens usadas no projeto:
 Fotos temáticas de verão e praia.
 Arquivos PNG e JPG de logotipos e montagens.
 
 
-src/js
+**src/js**
 Contém o arquivo de script JavaScript:
 script.js: Adicionar interatividade ao site, como navegação e animações
 
-Outros Arquivos
-package-lock.json e package.json: Arquivos relacionados ao gerenciamento de dependências (provavelmente com o npm).
-README.md: Documento explicativo do projeto.
+**Outros Arquivos**
+``package-lock.json`` e ``package.json:`` Arquivos relacionados ao gerenciamento de dependências (provavelmente com o npm).
+``README.md:`` Documento explicativo do projeto.
 
 
+## Tecnologias utilizadas: 
+
+**HTML (HyperText Markup Language)**
+Linguagem de marcação utilizada para estruturar o conteúdo da página web. 
+Em nosso projeto, o HTML define o layout, como navegação, carrossel de imagens e seções como "Ofertas" e "Newsletter".
+<br>
+
+**CSS (Cascading Style Sheets)** 
+Responsável pela estilização do site, como cores, fontes, posicionamento e espaçamento. No seu código, o **CSS** é usado para criar um design atraente, com estilos como rolagem suave, navbar fixa e responsividade. <br>
+
+**JavaScript**
+Linguagem de programação que adiciona interatividade à página. No nosso projeto, foi  usada para a funcionalidade do menu hambúrguer.<br>
+
+**Bootstrap**
+Framework CSS que facilita o desenvolvimento de layouts responsivos e modernos. O nosso projeto utiliza a versão 4.1.3 para componentes como o carrossel e a navbar.
+
+**Google Fonts**
+Fonte personalizada "Poppins", importada para garantir uma estética uniforme e profissional ao texto.
+
+**Imagens e Ícones**
+Inclui logotipos, imagens ilustrativas e ícones, que enriquecem visualmente o nosso site.
+Responsividade
+A responsividade do site é garantida por meio de media queries no arquivo media.css e pela integração com o framework Bootstrap. Esses recursos permitem que o layout e os estilos sejam adaptados a diferentes tamanhos de tela, oferecendo uma navegação consistente e acessível em dispositivos móveis, tablets e desktops.
 
 
+## Home Page  (Página Inicial):
+
+A **Home Page** é a porta de entrada do site e foi projetada para causar uma boa primeira impressão nos usuários. <br>
+Ela apresenta:
+**Layout intuitivo e visual atrativo:** proporciona uma experiência agradável e acolhedora para o visitante. <br>
+**Destaques do site:** Inclui seções que direcionam para informações principais, como dicas de praias, área de lazer e contato. <br>
+
+**Navegação clara:** Links para as páginas principais, organizados em uma barra de navegação responsiva.<br>
+**Elementos Visuais:** Imagens temáticas de praia e verão, além do logotipo da marca, reforçando a identidade visual do projeto. <br>
+**Design Responsivo:** Ajusta-se perfeitamente a dispositivos móveis, tablets e desktops, garantindo acessibilidade e usabilidade em diferentes plataformas. <br>
+
+A Home Page serve como o ponto de partida da experiência do usuário, convidando-o a explorar o restante do conteúdo do site.<br> <br>
+
+### HTML
+
+**1. Estrutura do Documento**
+O documento segue o padrão HTML5 (<!DOCTYPE html>), garantindo compatibilidade com navegadores modernos.
+A head inclui metadados importantes, links para bibliotecas externas (Bootstrap, Google Fonts) e arquivos de estilos personalizados. <br>
+**2. Navegação**
+Inclui uma barra de navegação (<nav>) com:
+Logotipo: Um link com uma imagem representando a identidade visual do site.
+Links de navegação: Menu para acesso rápido às seções e páginas internas do site.
+Menu hambúrguer: Implementado para versões responsivas. <br>
+**3. Carrossel**
+Um carrossel (<div class="carousel slide">) exibe imagens rotativas de alta qualidade, destacando o tema das praias. Ele é gerenciado pelo Bootstrap e inclui botões para navegar entre as imagens. <br>
+**4. Seção de Ofertas**
+Apresenta cartões (<div class="card">) que mostram diferentes destinos turísticos com imagens e descrições curtas. <br>
+**5. Newsletter**
+Contém um formulário de inscrição simples (<form>), onde os usuários podem se cadastrar para receber atualizações e ofertas exclusivas. <br>
+**6. Rodapé**
+Fornece informações de copyright e um e-mail de contato para suporte ou informações adicionais.
 
 
+## CSS
+**1. Tipografia e Estilo Global**
+A fonte principal utilizada é a Poppins (importada do Google Fonts), que traz um visual moderno e limpo. 
+A rolagem suave é implementada com a propriedade scroll-behavior: smooth, oferecendo uma transição suave entre as seções.
+**2. Estilização do Corpo da Página**
+Centralização dos elementos com Flexbox, proporcionando um layout mais flexível e equilibrado.
+O fundo da página é claro e fixo, criando uma sensação de leveza e harmonia.
+
+**3. Navbar**
+A barra de navegação tem:
+Design Responsivo: A barra de navegação se adapta a diferentes tamanhos de tela, incluindo um menu hambúrguer para dispositivos móveis.
+Estilização Personalizada: Utilização de cores vibrantes e efeitos de hover para criar uma navegação interativa e atrativa.
+
+**4. Carrossel**
+Totalmente responsivo, as imagens se ajustam ao tamanho da tela com classes do Bootstrap.
+**5. Cartões de Ofertas**
+Os cartões são estilizados para apresentar informações organizadas e visuais atraentes com imagens e localizações.
+**6. Formulário de Newsletter**
+O formulário é simples e funcional, destacando-se com botões e campos alinhados.
+
+
+____________________
 
 
 
