@@ -30,12 +30,12 @@ Abaixo você encontrará informações mais detalhadas sobre a estrutura deste p
 ### Subdiretórios
 
 **src/css**
-Contém os arquivos de estilo *CSS*:
-Esses arquivos estilizam seções ou páginas específicas, como “index” (Home Page),  "Área de Lazer" e "Contato".
-``areaLazer.css:`` Estiliza a página dedicada às áreas de lazer das praias.
-``contato.css:`` Aplica os estilos ao formulário de contato.
-``media.css:`` Responsável pela responsividade do site, ajustando o layout para diferentes tamanhos de tela usando media queries.
-``styles.css:`` Contém estilos globais compartilhados entre as páginas, também responsável pelo estilo da nossa home page
+Contém os arquivos de estilo *CSS*: <br>
+Esses arquivos estilizam seções ou páginas específicas, como “index” (Home Page),  "Área de Lazer" e "Contato". <br>
+``areaLazer.css:`` Estiliza a página dedicada às áreas de lazer das praias. <br>
+``contato.css:`` Aplica os estilos ao formulário de contato.<br>
+``media.css:`` Responsável pela responsividade do site, ajustando o layout para diferentes tamanhos de tela usando media queries.<br>
+``styles.css:`` Contém estilos globais compartilhados entre as páginas, também responsável pelo estilo da nossa home page. <br>
 
  ``src/favicons``
 Contém ícones para o site:
